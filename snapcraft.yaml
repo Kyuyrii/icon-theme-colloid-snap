@@ -17,6 +17,8 @@ slots:
     interface: content
     source:
       read:
+        - $SNAP/share/icons/Colloid-cursors
+        - $SNAP/share/icons/Colloid-dark-cursors
         - $SNAP/share/icons/Colloid
         - $SNAP/share/icons/Colloid-Catppuccin
         - $SNAP/share/icons/Colloid-Catppuccin-Dark
