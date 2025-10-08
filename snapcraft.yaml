@@ -189,6 +189,8 @@ parts:
     override-build: |
       mkdir -p $CRAFT_PART_INSTALL/usr/share/icons
       ./install.sh --scheme all --theme all --notint --dest $CRAFT_PART_INSTALL/usr/share/icons
+      cd cursors
+      ./install.sh
       craftctl set version=$(date +%Y-%m-%d)
     prime:
       - usr/share/icons
