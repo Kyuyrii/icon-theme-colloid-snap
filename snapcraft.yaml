@@ -186,6 +186,9 @@ parts:
   icon-theme-colloid:
     plugin: nil
     source: https://github.com/vinceliuice/Colloid-icon-theme.git
+    build-packages:
+      - libgtk-3-bin
+      - gtk-update-icon-cache
     override-build: |
       mkdir -p $CRAFT_PART_INSTALL/usr/share/icons
       ./install.sh --scheme all --theme all --notint --dest $CRAFT_PART_INSTALL/usr/share/icons
